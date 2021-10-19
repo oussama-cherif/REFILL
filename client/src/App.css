@@ -1,0 +1,19 @@
+
+.form-control label,
+.form-control input{
+  width: 100%;
+  display: block;
+}
+
+.form-control label {
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.cirle {
+  border: 1 solid;
+  border-radius: 50%;
+}
