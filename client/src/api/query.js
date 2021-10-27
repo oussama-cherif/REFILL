@@ -35,6 +35,18 @@ export const OPERATOR_BALANCE_QUERY= gql`
 query {
   operators {
     balance
+    color
+  }
+}
+`
+
+export const CREDITT_QUERY= gql`
+query {
+  operators {
+    cards {
+      credit
+    }
+    color
   }
 }
 `

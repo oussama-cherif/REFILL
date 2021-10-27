@@ -12,15 +12,17 @@ function Wallet() {
       <div className="wave">
         <div className="wallet-head">
           <h1>Refill</h1>
-          <Link to='/settings' className="settings"><i className="fas fa-cog"></i></Link>
+          <Link to='/settings' className="settings"><i className="fas fa-cog fa-2x"></i></Link>
         </div>
         <h2>My Wallet </h2>
         <Credit />     
       </div>
       <Card />
       <Cards/>
-      <Link to='/save'><i class="fas fa-charging-station"></i></Link>
-      <Link to='/create-operator'><i class="fas fa-plus"></i></Link>
+      <div className="icon-links">
+      <Link to='/save' className="icon"><i class="fas fa-charging-station fa-2x"></i></Link>
+      <Link to='/create-operator' className="icon"><i class="fas fa-plus fa-2x"></i></Link>
+      </div>
     </div>
   )
 }

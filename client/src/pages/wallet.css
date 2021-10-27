@@ -18,3 +18,17 @@ h2 {
   color: white;
 }
 
+.icon-links {
+  display: flex;
+  justify-content:center;
+  margin-top: 2rem;
+
+}
+.icon {
+  color: #F2555A;
+  padding: 0.5rem;
+  margin: 2rem;
+  border: 2px solid #F2555A;
+  border-radius: 50%;
+}
+

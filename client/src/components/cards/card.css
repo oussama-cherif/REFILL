@@ -1,0 +1,14 @@
+.card {
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.balance-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balance-text {
+  margin:0;
+}

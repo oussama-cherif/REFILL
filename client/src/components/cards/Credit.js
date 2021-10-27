@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import { useQuery, gql } from "@apollo/client";
 import { CREDIT_QUERY } from "../../api/query.js"
 

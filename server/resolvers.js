@@ -1,5 +1,6 @@
 const Operator = require('./models/operator')
 const Card = require('./models/card');
+const card = require('./models/card');
 
 
 const resolvers = {
@@ -38,11 +39,13 @@ const resolvers = {
     },
     deleteOperator: async (parent, args, context, info) => {
       const {id} = args
-      await Operator.findById(id)
-      await Operator.findByIdAndDelete(id)      
+      // await Operator.findById(id)
+      await Card.deleteMany({"operator": id})
+      await Operator.findByIdAndDelete(id) 
       return 'operator deleted succesfully!'
     },
     deleteAllOperators: async (parent, args, context, info) => {
+      await Card.deleteMany({})
       await Operator.deleteMany({});     
       return 'All operators have been deleted !'
     },
